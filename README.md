@@ -1,10 +1,19 @@
-- 👋 Hi, I’m @asunm123222202039
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
 
-<!---
-asunm123222202039/asunm123222202039 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+# define the base class player
+class Player:
+  def play(self):
+    print("The player is playing cricket.")
+# Define the derived class Batsma
+class Batsman(Player):
+  def play(self):
+    print("The batsman is batting.")
+# Define the derived class Bowler 
+class Bowler(Player):
+  def play(self):
+    print("The bowler is bowling.")
+# Create objects of Batsman and Bouter classes
+batsman = Batsman()
+bowler = Bowler()
+#call the play() method for each object
+batsman.play()
+bowler.play()
